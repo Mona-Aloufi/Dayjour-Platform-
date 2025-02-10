@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="{{ language_code }}">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% load i18n %}{% trans "Welcome to Dayjour" %}</title>
+    {% load static %}
+    <link id="theme-link" rel="stylesheet" href="{% static 'css/light_mode.css' %}">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var themeLink = document.getElementById('theme-link');
+            if (localStorage.getItem('darkMode') === 'true') {
+                themeLink.href = '{% static "css/dark_mode.css" %}';
+            } else {
+                themeLink.href = '{% static "css/light_mode.css" %}';
+            }
+
+            // Toggle Dark/Light Mode
+            function toggleTheme() {
+                if (themeLink.href.includes('light_mode.css')) {
+                    themeLink.href = '{% static "css/dark_mode.css" %}';
+                    localStorage.setItem('darkMode', 'true');
+                } else {
+                    themeLink.href = '{% static "css/light_mode.css" %}';
+                    localStorage.setItem('darkMode', 'false');
+                }
+            }
+            
+            document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+        });
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>{% trans "Welcome to Dayjour" %}</h1>
+        <div>
+            <a href="/?lang=ar" class="language-switcher">🇸🇦 العربية</a> | 
+            <a href="/?lang=en" class="language-switcher">🇺🇸 English</a>
+        </div>
+        <button id="theme-toggle">تبديل إلى وضع الدارك</button>
+    </header>
+
+    {% include "includes/header.html" %}
+    
+    {% block content %}
+    <!-- المحتوى الرئيسي سيظهر هنا -->
+    {% endblock %}
+    
+    {% include "includes/footer.html" %}
+
+</body>
+</html>

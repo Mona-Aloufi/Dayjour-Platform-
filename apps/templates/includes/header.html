@@ -1,0 +1,20 @@
+<header class="header">
+    {% load static %}
+    <div class="logo">
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <img src="{% static 'images/header-logo.png' %}" alt="Dayjour Logo">
+        <h1>Dayjour - Anti Money Laundering</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="/">الرئيسية</a></li>
+            <li><a href="/dashboard/">لوحة التحكم</a></li>
+            <li><a href="/reports/">التقارير</a></li>
+            <li><a href="/analytics/">التحليلات</a></li>
+            <li><a href="/settings/">الإعدادات</a></li>
+        </ul>
+    </nav>
+    <div class="auth">
+        <a href="/login/">تسجيل الدخول</a> | <a href="/logout/">تسجيل الخروج</a>
+    </div>
+</header>

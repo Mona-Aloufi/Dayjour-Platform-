@@ -1,0 +1,59 @@
+/* Header Styles */
+/* لتصغير الشعار */
+/* إذا كانت الخلفية موجودة على العنصر الذي يحتوي على الشعار */
+.header .logo {
+    background-color: transparent;  /* إزالة الخلفية */
+}
+
+.header .logo img {
+    width: 150px;  /* اختر الحجم المناسب */
+    height: auto;  /* للحفاظ على النسب الصحيحة */
+    float: right;  /* لتحريك الشعار لليمين */
+ 
+}
+
+/* لضبط النص داخل الشعار */
+.header .logo h1 {
+    font-size: 16px;  /* اختر حجم النص المناسب */
+    text-align: right;  /* محاذاة النص لليمين */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0A192F;
+    color: white;
+    padding: 15px 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+.footer {
+    background: #0A192F;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
