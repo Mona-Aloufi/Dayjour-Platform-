@@ -1,55 +1,47 @@
 <!DOCTYPE html>
 <html lang="{{ language_code }}">
-
-
 <head>
+    {% load static %}
+    {% load i18n %}
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% load i18n %}{% trans "Welcome to Dayjour" %}</title>
-    {% load static %}
-    <link id="theme-link" rel="stylesheet" href="{% static 'css/light_mode.css' %}">
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var themeLink = document.getElementById('theme-link');
-            if (localStorage.getItem('darkMode') === 'true') {
-                themeLink.href = '{% static "css/dark_mode.css" %}';
-            } else {
-                themeLink.href = '{% static "css/light_mode.css" %}';
-            }
+    <title>{% block title %}{% trans "Welcome to Dayjour" %}{% endblock %}</title>
 
-            // Toggle Dark/Light Mode
-            function toggleTheme() {
-                if (themeLink.href.includes('light_mode.css')) {
-                    themeLink.href = '{% static "css/dark_mode.css" %}';
-                    localStorage.setItem('darkMode', 'true');
-                } else {
-                    themeLink.href = '{% static "css/light_mode.css" %}';
-                    localStorage.setItem('darkMode', 'false');
-                }
-            }
-            
-            document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
-        });
-    </script>
+    <!-- BizLand CSS Files -->
+    <!-- <link href="{% static 'bizland/vendor/aos/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'bizland/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'bizland/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'bizland/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'bizland/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'bizland/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+    <link href="{% static 'bizland/css/style.css' %}" rel="stylesheet">
+
+    {% block extra_css %}{% endblock %} -->
 </head>
 <body>
 
-    <header>
-        <h1>{% trans "Welcome to Dayjour" %}</h1>
-        <div>
-            <a href="/?lang=ar" class="language-switcher">🇸🇦 العربية</a> | 
-            <a href="/?lang=en" class="language-switcher">🇺🇸 English</a>
-        </div>
-        <button id="theme-toggle">تبديل إلى وضع الدارك</button>
-    </header>
-
+    <!-- Header -->
     {% include "includes/header.html" %}
-    
-    {% block content %}
-    <!-- المحتوى الرئيسي سيظهر هنا -->
-    {% endblock %}
-    
+
+    <!-- Main Content -->
+   
+    {% block content %}{% endblock %}
+ 
+
+    <!-- Footer -->
     {% include "includes/footer.html" %}
 
+    <!-- BizLand JavaScript Files
+    <script src="{% static 'bizland/vendor/aos/aos.js' %}"></script>
+    <script src="{% static 'bizland/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'bizland/vendor/glightbox/js/glightbox.min.js' %}"></script>
+    <script src="{% static 'bizland/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'bizland/vendor/swiper/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'bizland/vendor/waypoints/noframework.waypoints.js' %}"></script>
+    <script src="{% static 'bizland/vendor/php-email-form/validate.js' %}"></script>
+    <script src="{% static 'bizland/js/main.js' %}"></script>
+
+    {% block extra_js %}{% endblock %} -->
 </body>
 </html>
