@@ -1,0 +1,69 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+<div class="container my-5">
+  <div class="row">
+    <!-- Sidebar -->
+    <div class="col-md-3">
+      <div class="card shadow-sm">
+        <div class="card-header text-center">
+          <h4>Welcome, {{ user.username }}</h4>
+        </div>
+        <div class="list-group list-group-flush">
+          <a href="{% url 'dashboard' %}" class="list-group-item list-group-item-action">Dashboard</a>
+          <a href="#" class="list-group-item list-group-item-action">My Data</a>
+          <a href="#" class="list-group-item list-group-item-action">Settings</a>
+          <a href="#" class="list-group-item list-group-item-action">Upload Data</a>
+          <a href="#" class="list-group-item list-group-item-action">Collaborate with Partners</a>
+          <a href="{% url 'logout' %}" class="list-group-item list-group-item-action text-danger">Logout</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="col-md-9">
+      <div class="card shadow-sm">
+        <div class="card-header">
+          <h2>Dashboard</h2>
+        </div>
+        <div class="card-body">
+          <p>Welcome to Dayjour! Here, you can manage your data securely using Secure Multi-Party Computation (SMPC) while leveraging Explainable AI (XAI) for transparency.</p>
+          <p>Collaborate with other organizations to train global models without compromising privacy.</p>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card text-center">
+                <div class="card-body">
+                  <h5 class="card-title">Total Datasets</h5>
+                  <p class="card-text">{{ dataset_count }}</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-center">
+                <div class="card-body">
+                  <h5 class="card-title">Recent Activity</h5>
+                  <p class="card-text">Last login: {{ user.last_login }}</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-center">
+                <div class="card-body">
+                  <h5 class="card-title">Account Settings</h5>
+                  <p class="card-text"><a href="#">Manage Account</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4">
+            <h5>Actions</h5>
+            <a href="#" class="btn btn-primary">View Global Model Insights</a>
+            <a href="#" class="btn btn-secondary">Contact Support</a>
+          </div>
+          <p class="mt-4">Need help? <a href="#">Contact Support</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

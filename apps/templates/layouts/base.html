@@ -1,47 +1,57 @@
 <!DOCTYPE html>
-<html lang="{{ language_code }}">
+<html lang="en">
+{% load static %}
+
 <head>
-    {% load static %}
-    {% load i18n %}
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>{% block title %}Dayjour{% endblock %}</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}{% trans "Welcome to Dayjour" %}{% endblock %}</title>
+  <!-- Favicons -->
+  <link href="{% static 'bizland/img/favicon.png'%}" rel="icon">
+  <link href="{% static 'bizland/img/apple-touch-icon.png'%}" rel="apple-touch-icon">
 
-    <!-- BizLand CSS Files -->
-    <!-- <link href="{% static 'bizland/vendor/aos/aos.css' %}" rel="stylesheet">
-    <link href="{% static 'bizland/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-    <link href="{% static 'bizland/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
-    <link href="{% static 'bizland/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
-    <link href="{% static 'bizland/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
-    <link href="{% static 'bizland/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
-    <link href="{% static 'bizland/css/style.css' %}" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    {% block extra_css %}{% endblock %} -->
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'bizland/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{% static 'bizland/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'bizland/vendor/aos/aos.css'%}" rel="stylesheet">
+  <link href="{% static 'bizland/vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+  <link href="{% static 'bizland/vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'bizland/css/main.css'%}" rel="stylesheet">
 </head>
-<body>
 
-    <!-- Header -->
-    {% include "includes/header.html" %}
+<body class="index-page">
 
-    <!-- Main Content -->
-   
+  <!-- Include Header -->
+ {% include "includes/header.html" %}
+
     {% block content %}{% endblock %}
- 
 
-    <!-- Footer -->
-    {% include "includes/footer.html" %}
+  {% include "includes/footer.html" %}
 
-    <!-- BizLand JavaScript Files
-    <script src="{% static 'bizland/vendor/aos/aos.js' %}"></script>
-    <script src="{% static 'bizland/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-    <script src="{% static 'bizland/vendor/glightbox/js/glightbox.min.js' %}"></script>
-    <script src="{% static 'bizland/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
-    <script src="{% static 'bizland/vendor/swiper/swiper-bundle.min.js' %}"></script>
-    <script src="{% static 'bizland/vendor/waypoints/noframework.waypoints.js' %}"></script>
-    <script src="{% static 'bizland/vendor/php-email-form/validate.js' %}"></script>
-    <script src="{% static 'bizland/js/main.js' %}"></script>
+  <!-- Vendor JS Files -->
+  <script src="{% static 'bizland/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'bizland/vendor/php-email-form/validate.js'%}"></script>
+  <script src="{% static 'bizland/vendor/aos/aos.js'%}"></script>
+  <script src="{% static 'bizland/vendor/glightbox/js/glightbox.min.js'%}"></script>
+  <script src="{% static 'bizland/vendor/waypoints/noframework.waypoints.js'%}"></script>
+  <script src="{% static 'bizland/vendor/purecounter/purecounter_vanilla.js'%}"></script>
+  <script src="{% static 'bizland/vendor/swiper/swiper-bundle.min.js'%}"></script>
+  <script src="{% static 'bizland/vendor/imagesloaded/imagesloaded.pkgd.min.js'%}"></script>
+  <script src="{% static 'bizland/vendor/isotope-layout/isotope.pkgd.min.js'%}"></script>
 
-    {% block extra_js %}{% endblock %} -->
+  <!-- Main JS File -->
+  <script src="{% static 'bizland/js/main.js'%}"></script>
+
 </body>
+
 </html>
