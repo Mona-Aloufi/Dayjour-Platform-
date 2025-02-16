@@ -1,0 +1,25 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+<div class="container my-5">
+  <h2>Train Local Model</h2>
+  <form action="{% url 'train_local_model' %}" method="post">
+    {% csrf_token %}
+    <div class="mb-3">
+      <label for="modelParameters" class="form-label">Select Model Parameters</label>
+      <select class="form-select" id="modelParameters" name="modelParameters" required>
+        <option value="">Choose...</option>
+        <option value="param1">Parameter Set 1</option>
+        <option value="param2">Parameter Set 2</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Train Model</button>
+  </form>
+  <p class="mt-4">Need help? <a href="#">Contact Support</a></p>
+
+  <!-- Optional: Feedback message section -->
+  {% if message %}
+    <div class="alert alert-info mt-3">{{ message }}</div>
+  {% endif %}
+</div>
+{% endblock %}

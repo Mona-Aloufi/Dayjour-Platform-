@@ -1,0 +1,8 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+<div class="container my-5">
+  <h2>Your Data Has Been Uploaded!</h2>
+  <a href="{% url 'download_encrypted_file' encrypted_file %}" class="btn btn-success">Download Uploaded File</a>
+</div>
+{% endblock %}

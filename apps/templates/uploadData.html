@@ -1,0 +1,16 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+<div class="container my-5">
+  <h2>Upload Data</h2>
+  <form action="{% url 'upload_data' %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="mb-3">
+      <label for="dataFile" class="form-label">Select Data File</label>
+      <input type="file" class="form-control" id="dataFile" name="dataFile" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Upload</button>
+  </form>
+  <p class="mt-4">Need help? <a href="#">Contact Support</a></p>
+</div>
+{% endblock %}
