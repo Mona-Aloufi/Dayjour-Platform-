@@ -26,10 +26,10 @@ from django.contrib import admin
 from django.conf.urls.i18n import i18n_patterns
 from django.urls import include,path
 from django.utils.translation import gettext_lazy as _
-
+from django.contrib.auth import views as auth_views
 
 urlpatterns = i18n_patterns(
-    path('core/', include("apps.core.urls")),
-    
+    path('', include("apps.core.urls")),
+
 )
 

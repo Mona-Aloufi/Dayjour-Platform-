@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - BizLand Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="{% static 'bizland/img/favicon.png'%}" rel="icon">
+  <link href="{% static 'bizland/img/apple-touch-icon.png'%}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'bizland/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{% static 'bizland/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'bizland/vendor/aos/aos.css'%}" rel="stylesheet">
+  <link href="{% static 'bizland/vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+  <link href="{% static 'bizland/vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'bizland/css/main.css'%}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: BizLand
+  * Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
+  * Updated: Dec 05 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header sticky-top">
+
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:support@dayjour.com">upport@dayjour.com</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div><!-- End Top Bar -->
+
+    <div class="branding d-flex align-items-cente">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1 class="sitename">DayJour</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#team">Team</a></li>
+            <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Dropdown 1</a></li>
+                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="#">Deep Dropdown 1</a></li>
+                    <li><a href="#">Deep Dropdown 2</a></li>
+                    <li><a href="#">Deep Dropdown 3</a></li>
+                    <li><a href="#">Deep Dropdown 4</a></li>
+                    <li><a href="#">Deep Dropdown 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Dropdown 2</a></li>
+                <li><a href="#">Dropdown 3</a></li>
+                <li><a href="#">Dropdown 4</a></li>
+              </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#login" class="btn btn-primary">Login</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section light-background">
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
+            <h1>Welcome to <span>Dayjour</span></h1>
+            <p>Secure Multi-Party Computation for data analysis</p>
+            <div class="d-flex">
+              <a href="#about" class="btn-get-started">Get Started</a>
+              <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+<!-- Featured Services Section -->
+<section id="featured-services" class="featured-services section">
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="bi bi-shield-lock icon"></i></div>
+          <h4><a href="" class="stretched-link">Encrypted Data Analysis</a></h4>
+          <p>Perform secure data analysis using Secure Multi-Party Computation (SMPC) without exposing sensitive information.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="bi bi-search icon"></i></div>
+          <h4><a href="" class="stretched-link">Anomaly Detection</a></h4>
+          <p>Identify unusual patterns in various datasets, including finance, healthcare, and cybersecurity, to detect potential threats or irregularities.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="bi bi-bar-chart-line icon"></i></div>
+          <h4><a href="" class="stretched-link">Explainable AI (XAI)</a></h4>
+          <p>Provide transparency in predictive model results to ensure regulatory compliance, increase trust, and enhance decision-making.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="bi bi-file-earmark-text icon"></i></div>
+          <h4><a href="" class="stretched-link">Comprehensive Reporting</a></h4>
+          <p>Generate detailed reports for various industries to support compliance, audits, and strategic insights.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Featured Services Section -->
+
+<!-- About Section -->
+<!-- About Section -->
+<section id="about" class="about section light-background">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>About</h2>
+    <p><span>Find Out More</span> <span class="description-title">About Dayjour</span></p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-3">
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <img src="{% static 'bizland/img/about.jpg'%}" alt="About Dayjour" class="img-fluid">
+      </div>
+
+      <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+        <div class="about-content ps-0 ps-lg-3">
+          <h3>Secure and Intelligent Data Analysis for a Transparent Future</h3>
+          <p class="fst-italic">
+            Dayjour leverages Secure Multi-Party Computation (SMPC) and Explainable AI (XAI) to enable privacy-preserving data analysis across multiple domains.
+          </p>
+          <ul>
+            <li>
+              <i class="bi bi-diagram-3"></i>
+              <div>
+                <h4>Privacy-Preserving Computation</h4>
+                <p>Analyze sensitive data collaboratively without compromising confidentiality.</p>
+              </div>
+            </li>
+            <li>
+              <i class="bi bi-fullscreen-exit"></i>
+              <div>
+                <h4>AI-Driven Anomaly Detection</h4>
+                <p>Detect fraud, cybersecurity threats, and irregularities across diverse industries using advanced AI models.</p>
+              </div>
+            </li>
+          </ul>
+          <p>
+            Dayjour empowers organizations to unlock insights from encrypted data, ensuring compliance, security, and trust in decision-making processes.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section><!-- /About Section -->
+
+<!-- Skills Section -->
+<section id="skills" class="skills section">
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row skills-content skills-animation">
+
+      <div class="col-lg-6">
+
+        <div class="progress">
+          <span class="skill"><span>Secure Multi-Party Computation (SMPC)</span> <i class="val">95%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Explainable AI (XAI)</span> <i class="val">90%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Federated Learning</span> <i class="val">85%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+      </div>
+
+      <div class="col-lg-6">
+
+        <div class="progress">
+          <span class="skill"><span>Privacy-Preserving AI</span> <i class="val">88%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Bias Detection & Mitigation</span> <i class="val">80%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Scalable AI Infrastructure</span> <i class="val">85%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section><!-- /Skills Section -->
+
+<!-- Stats Section -->
+<section id="stats" class="stats section">
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+        <i class="bi bi-shield-lock"></i>
+        <div class="stats-item">
+          <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter"></span>
+          <p>Secure Collaborations</p>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+        <i class="bi bi-bar-chart-line"></i>
+        <div class="stats-item">
+          <span data-purecounter-start="0" data-purecounter-end="120" data-purecounter-duration="1" class="purecounter"></span>
+          <p>AI Models Trained</p>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+        <i class="bi bi-lightbulb"></i>
+        <div class="stats-item">
+          <span data-purecounter-start="0" data-purecounter-end="2000" data-purecounter-duration="1" class="purecounter"></span>
+          <p>Privacy-Preserved Insights</p>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+        <i class="bi bi-people"></i>
+        <div class="stats-item">
+          <span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="purecounter"></span>
+          <p>Active Research Partners</p>
+        </div>
+      </div><!-- End Stats Item -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Stats Section -->
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients section light-background">
+
+      <div class="container">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 40
+                },
+                "480": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 60
+                },
+                "640": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 80
+                },
+                "992": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 120
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="{% static 'bizland/img/clients/client-1.png'%}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'bizland/img/clients/client-2.png'%}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'bizland/img/clients/client-3.png'%}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'bizland/img/clients/client-4.png'%}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'bizland/img/clients/client-5.png'%}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'bizland/img/clients/client-6.png'%}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'bizland/img/clients/client-7.png'%}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'bizland/img/clients/client-8.png'%}" class="img-fluid" alt=""></div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Clients Section -->
+
+ <!-- Services Section -->
+<!-- Services Section -->
+<section id="services" class="services section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Our Services</h2>
+    <p><span>Explore</span> <span class="description-title">Our Smart Solutions for Secure Data Analysis</span></p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <!-- Encrypted Data Analysis -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-item position-relative">
+          <div class="icon">
+            <i class="bi bi-shield-lock"></i>
+          </div>
+          <a href="#" class="stretched-link">
+            <h3>Encrypted Data Analysis</h3>
+          </a>
+          <p>Leverage Secure Multi-Party Computation (SMPC) to analyze sensitive data without exposing it, ensuring maximum privacy.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <!-- Fraud Detection & Behavioral Analytics -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-item position-relative">
+          <div class="icon">
+            <i class="bi bi-graph-up-arrow"></i>
+          </div>
+          <a href="#" class="stretched-link">
+            <h3>Fraud Detection & Behavioral Analytics</h3>
+          </a>
+          <p>Utilizing deep learning algorithms to detect suspicious patterns and identify anomalies across various industries.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <!-- Federated Learning -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-item position-relative">
+          <div class="icon">
+            <i class="bi bi-cloud-check"></i>
+          </div>
+          <a href="#" class="stretched-link">
+            <h3>Federated Learning</h3>
+          </a>
+          <p>Enabling organizations to train AI models collaboratively without sharing sensitive data.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <!-- Explainable AI (XAI) -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-item position-relative">
+          <div class="icon">
+            <i class="bi bi-lightbulb"></i>
+          </div>
+          <a href="#" class="stretched-link">
+            <h3>Explainable AI (XAI)</h3>
+          </a>
+          <p>Providing clear justifications for AI-driven decisions, enhancing transparency and trust in machine learning models.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <!-- Data Security & Privacy -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+        <div class="service-item position-relative">
+          <div class="icon">
+            <i class="bi bi-database-lock"></i>
+          </div>
+          <a href="#" class="stretched-link">
+            <h3>Data Security & Privacy</h3>
+          </a>
+          <p>Implementing cutting-edge encryption and secure computation techniques to safeguard data against breaches.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <!-- Risk Prediction & Smart Decision Making -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+        <div class="service-item position-relative">
+          <div class="icon">
+            <i class="bi bi-speedometer2"></i>
+          </div>
+          <a href="#" class="stretched-link">
+            <h3>Risk Prediction & Smart Decision Making</h3>
+          </a>
+          <p>Analyzing historical data to forecast potential risks and assist organizations in making data-driven strategic decisions.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+    </div>
+
+  </div>
+
+</section><!-- End Services Section -->
+
+    <!-- Testimonials Section -->
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials section dark-background">
+
+  <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="swiper init-swiper">
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 600,
+          "autoplay": {
+            "delay": 5000
+          },
+          "slidesPerView": "auto",
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          }
+        }
+      </script>
+      <div class="swiper-wrapper">
+
+        <!-- Testimonial 1 -->
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <img src="assets/img/testimonials/testimonial-1.jpg" class="testimonial-img" alt="">
+            <h3>Dr. Emily Carter</h3>
+            <h4>AI Researcher</h4>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>Dayjour's secure multi-party computation technology has revolutionized our ability to collaborate on sensitive AI research without compromising data privacy.</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <!-- Testimonial 2 -->
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <img src="assets/img/testimonials/testimonial-2.jpg" class="testimonial-img" alt="">
+            <h3>Michael Reynolds</h3>
+            <h4>Financial Analyst</h4>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>Using Dayjour's privacy-preserving analytics, we can detect fraudulent activities in real-time while ensuring regulatory compliance.</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <!-- Testimonial 3 -->
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <img src="assets/img/testimonials/testimonial-3.jpg" class="testimonial-img" alt="">
+            <h3>Sophia Patel</h3>
+            <h4>Cybersecurity Specialist</h4>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>Dayjour provides cutting-edge encryption and AI-driven risk assessment tools, helping organizations enhance their security posture.</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <!-- Testimonial 4 -->
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <img src="assets/img/testimonials/testimonial-4.jpg" class="testimonial-img" alt="">
+            <h3>James Chen</h3>
+            <h4>Healthcare Data Scientist</h4>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>With Dayjour, we securely analyze sensitive healthcare data across institutions without exposing patient information.</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <!-- Testimonial 5 -->
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <img src="assets/img/testimonials/testimonial-5.jpg" class="testimonial-img" alt="">
+            <h3>Olivia Martinez</h3>
+            <h4>Regulatory Compliance Officer</h4>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>Dayjour ensures organizations meet international data privacy regulations while leveraging AI-driven insights for compliance and security.</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+          </div>
+        </div><!-- End testimonial item -->
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </div>
+
+</section><!-- End Testimonials Section -->
+
+
+ <!-- Projects Section -->
+<section id="portfolio" class="portfolio section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Our Projects</h2>
+    <p><span>Explore&nbsp;</span> <span class="description-title">Dayjour's Work</span></p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+      <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+        <li data-filter="*" class="filter-active">All</li>
+        <li data-filter=".filter-analysis">Data Analysis</li>
+        <li data-filter=".filter-security">Security & Privacy</li>
+        <li data-filter=".filter-ai">Artificial Intelligence</li>
+      </ul><!-- End Portfolio Filters -->
+
+      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-analysis">
+          <img src="<!-- Add image URL here -->" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Financial Data Analysis</h4>
+            <p>Data analysis using Secure Multi-Party Computation</p>
+            <a href="<!-- Add image URL here -->" title="Financial Data Analysis" data-gallery="portfolio-gallery-analysis" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-security">
+          <img src="<!-- Add image URL here -->" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Security & Privacy System</h4>
+            <p>Encrypting financial data to prevent threats</p>
+            <a href="<!-- Add image URL here -->" title="Security & Privacy System" data-gallery="portfolio-gallery-security" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai">
+          <img src="<!-- Add image URL here -->" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>AI for Fraud Detection</h4>
+            <p>Deep learning models for detecting money laundering</p>
+            <a href="<!-- Add image URL here -->" title="AI for Fraud Detection" data-gallery="portfolio-gallery-ai" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+      </div><!-- End Portfolio Container -->
+
+    </div>
+  </div>
+
+</section><!-- End Projects Section -->
+
+<!-- Team Section -->
+<section id="team" class="team section light-background">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Our Team at Dejor</h2>
+    <p><span>Meet Our</span> <span class="description-title">Dedicated Team</span></p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <!-- Team Member 1 -->
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+        <div class="team-member">
+          <div class="member-img">
+            <!-- Placeholder Image (Can be replaced with a cartoon avatar) -->
+            <img src="{% static 'bizland/img/team/avatar-placeholder.png' %}" class="img-fluid" alt="Rafeef Abdullah Alsuhaibani">
+            <div class="social">
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h4>Rafeef Abdullah Alsuhaibani</h4>
+            <span>Data Analyst</span>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+      <!-- Team Member 2 -->
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+        <div class="team-member">
+          <div class="member-img">
+            <img src="{% static 'bizland/img/team/avatar-placeholder.png' %}" class="img-fluid" alt="Raghad Yaeesh Alyaeesh">
+            <div class="social">
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h4>Raghad Yaeesh Alyaeesh</h4>
+            <span>Machine Learning Engineer</span>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+      <!-- Team Member 3 -->
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+        <div class="team-member">
+          <div class="member-img">
+            <img src="{% static 'bizland/img/team/avatar-placeholder.png' %}" class="img-fluid" alt="Lamya Musaid Al Rashidi">
+            <div class="social">
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h4>Lamya Musaid Al Rashidi</h4>
+            <span>Software Developer</span>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+      <!-- Team Member 4 -->
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+        <div class="team-member">
+          <div class="member-img">
+            <img src="{% static 'bizland/img/team/avatar-placeholder.png' %}" class="img-fluid" alt="Mona Hamdan Aloufi">
+            <div class="social">
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h4>Mona Hamdan Aloufi</h4>
+            <span>AI & Data Analyst</span>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+      <!-- Team Member 5 -->
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
+        <div class="team-member">
+          <div class="member-img">
+            <img src="{% static 'bizland/img/team/avatar-placeholder.png' %}" class="img-fluid" alt="Najla Ali Alharbi">
+            <div class="social">
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h4>Najla Ali Alharbi</h4>
+            <span>Cybersecurity Specialist</span>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+      <!-- Supervisor -->
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="600">
+        <div class="team-member">
+          <div class="member-img">
+            <img src="{% static 'bizland/img/team/avatar-placeholder.png' %}" class="img-fluid" alt="Dr. Mohammed Alsuhaibani">
+            <div class="social">
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h4>Supervisor Dr. Mohammed Alsuhaibani</h4>
+            <span>Project Supervisor</span>
+          </div>
+        </div>
+      </div><!-- End Supervisor -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Team Section -->
+
+
+<!-- Pricing Section -->
+<section id="pricing" class="pricing section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Pricing</h2>
+    <p><span>Check our</span> <span class="description-title">Pricing</span></p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-3">
+
+      <!-- Pricing Item 1: Basic -->
+      <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="pricing-item">
+          <h3>Basic</h3>
+          <h4><sup>$</sup>0<span> / month</span></h4>
+          <ul>
+            <li>Access to core data analysis tools</li>
+            <li>Limited transaction processing</li>
+            <li>Single user account</li>
+            <li class="na">Priority support</li>
+            <li class="na">Custom analytics</li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="#" class="btn-buy">Get Started</a>
+          </div>
+        </div>
+      </div><!-- End Pricing Item -->
+
+      <!-- Pricing Item 2: Pro -->
+      <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="pricing-item featured">
+          <h3>Pro</h3>
+          <h4><sup>$</sup>29<span> / month</span></h4>
+          <ul>
+            <li>Full access to advanced data tools</li>
+            <li>Enhanced transaction processing</li>
+            <li>Up to 5 user accounts</li>
+            <li>Email &amp; Chat support</li>
+            <li class="na">Custom reports</li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="#" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div><!-- End Pricing Item -->
+
+      <!-- Pricing Item 3: Business -->
+      <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="pricing-item">
+          <h3>Business</h3>
+          <h4><sup>$</sup>59<span> / month</span></h4>
+          <ul>
+            <li>All Pro features included</li>
+            <li>Unlimited data processing</li>
+            <li>Up to 20 user accounts</li>
+            <li>Priority support</li>
+            <li>Advanced risk assessment</li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="#" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div><!-- End Pricing Item -->
+
+      <!-- Pricing Item 4: Enterprise -->
+      <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="500">
+        <div class="pricing-item">
+          <span class="advanced">Advanced</span>
+          <h3>Enterprise</h3>
+          <h4><sup>$</sup>99<span> / month</span></h4>
+          <ul>
+            <li>Complete access to all features</li>
+            <li>Unlimited data and transaction processing</li>
+            <li>Unlimited user accounts</li>
+            <li>24/7 dedicated support</li>
+            <li>Custom analytics &amp; reporting</li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="#" class="btn-buy">Contact Us</a>
+          </div>
+        </div>
+      </div><!-- End Pricing Item -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Pricing Section -->
+
+
+<!-- Faq Section -->
+<section id="faq" class="faq section light-background">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>F.A.Q</h2>
+    <p><span>Frequently Asked</span> <span class="description-title">Questions</span></p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row justify-content-center">
+
+      <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="faq-container">
+
+          <!-- Faq Item 1 -->
+          <div class="faq-item faq-active">
+            <h3>What is Dayjour?</h3>
+            <div class="faq-content">
+              <p>Dayjour is an advanced data analysis platform that uses Secure Multi-Party Computation (SMPC) to help financial institutions detect money laundering and fraud by securely analyzing encrypted data without exposing sensitive information.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <!-- Faq Item 2 -->
+          <div class="faq-item">
+            <h3>How does Dayjour ensure data security?</h3>
+            <div class="faq-content">
+              <p>Dayjour utilizes SMPC and encryption techniques, ensuring that sensitive financial data remains secure while still allowing multiple parties to collaboratively perform analysis and detect fraudulent activity.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <!-- Faq Item 3 -->
+          <div class="faq-item">
+            <h3>Can Dayjour integrate with my financial systems?</h3>
+            <div class="faq-content">
+              <p>Yes, Dayjour can integrate with a variety of financial systems and data sources to streamline analysis and provide real-time fraud detection and compliance checks.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <!-- Faq Item 4 -->
+          <div class="faq-item">
+            <h3>Is there a free trial available?</h3>
+            <div class="faq-content">
+              <p>Yes, Dayjour offers a free trial that allows you to explore its features, including secure data analysis and fraud detection capabilities, before committing to a subscription.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <!-- Faq Item 5 -->
+          <div class="faq-item">
+            <h3>What types of support are available for Dayjour users?</h3>
+            <div class="faq-content">
+              <p>We offer comprehensive support through various channels including email, phone, and live chat. Additionally, Dayjour provides documentation and tutorials to assist you with setup and operation.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <!-- Faq Item 6 -->
+          <div class="faq-item">
+            <h3>How can I contact Dayjour's customer support team?</h3>
+            <div class="faq-content">
+              <p>You can reach out to our customer support team via email at support@dayjour.com, or through our contact form available on the website.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+        </div>
+
+      </div><!-- End Faq Column-->
+
+    </div>
+
+  </div>
+
+</section><!-- /Faq Section -->
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p><span>Need Help with Fraud Detection or Data Security?</span> <span class="description-title">Contact Us</span></p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-5">
+
+        <div class="info-wrap">
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <i class="bi bi-geo-alt flex-shrink-0"></i>
+            <div>
+              <h3>Address</h3>
+              <p>A108 Abou Bakar As-Sudiq Street, Buraydah, B 535022</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <i class="bi bi-telephone flex-shrink-0"></i>
+            <div>
+              <h3>Call Us</h3>
+              <p>+1 5589 55488 55</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <i class="bi bi-envelope flex-shrink-0"></i>
+            <div>
+              <h3>Email Us</h3>
+              <p>support@dayjour.com</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <div class="col-lg-7">
+        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <label for="name-field" class="pb-2">Your Name</label>
+              <input type="text" name="name" id="name-field" class="form-control" required="">
+            </div>
+
+            <div class="col-md-6">
+              <label for="email-field" class="pb-2">Your Email</label>
+              <input type="email" class="form-control" name="email" id="email-field" required="">
+            </div>
+
+            <div class="col-md-12">
+              <label for="subject-field" class="pb-2">Subject</label>
+              <input type="text" class="form-control" name="subject" id="subject-field" required="">
+            </div>
+
+            <div class="col-md-12">
+              <label for="message-field" class="pb-2">Message</label>
+              <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you for reaching out!</div>
+
+              <button type="submit">Send Message</button>
+            </div>
+
+          </div>
+        </form>
+      </div><!-- End Contact Form -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Contact Section -->
+
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-6">
+            <h4>Join Our Newsletter</h4>
+            <p>Subscribe to our newsletter and receive the latest updates about fraud detection and data security!</p>
+            <form action="forms/newsletter.php" method="post" class="php-email-form">
+              <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename">Dayjour</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>A108 Abou Bakar As-Sudiq Street, Buraydah, B 535022</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+            <p><strong>Email:</strong> <span>support@dayjour.com</span></p>
+          </div>
+        </div>
+  
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Fraud Detection</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Data Encryption</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Secure Data Analysis</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Consulting</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-lg-4 col-md-12">
+          <h4>Follow Us</h4>
+          <p>Stay connected for updates and insights on fraud detection and data security.</p>
+          <div class="social-links d-flex">
+            <a href=""><i class="bi bi-twitter"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Dayjour</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  
+  </footer>
+  
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'bizland/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'bizland/vendor/php-email-form/validate.js'%}"></script>
+  <script src="{% static 'bizland/vendor/aos/aos.js'%}"></script>
+  <script src="{% static 'bizland/vendor/glightbox/js/glightbox.min.js'%}"></script>
+  <script src="{% static 'bizland/vendor/waypoints/noframework.waypoints.js'%}"></script>
+  <script src="{% static 'bizland/vendor/purecounter/purecounter_vanilla.js'%}"></script>
+  <script src="{% static 'bizland/vendor/swiper/swiper-bundle.min.js'%}"></script>
+  <script src="{% static 'bizland/vendor/imagesloaded/imagesloaded.pkgd.min.js'%}"></script>
+  <script src="{% static 'bizland/vendor/isotope-layout/isotope.pkgd.min.js'%}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'bizland/js/main.js'%}"></script>
+
+</body>
+
+</html>
